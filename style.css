@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Red Hat Display', sans-serif;
     transition-duration: 1s;
 }
@@ -44,7 +44,7 @@ header{
     position: fixed;
     top: 0;
     z-index: 1;
-    padding: 10px 10vw;
+    padding: 20px 10vw;
 }
 .logo img{
     width: 120px;
@@ -100,7 +100,7 @@ ul{
     background: linear-gradient(
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)
-      ),url(img/Photographie\ Augustin\ JACQUEL\ AlsaceRallyeFestival-6.jpg);
+      ),url(img/Lancia-stratos.jpg);
       background-position: center;
       background-size: cover;
       flex-direction: column;
@@ -126,8 +126,30 @@ h1{
     overflow: hidden;
     border-radius: 10px;
     margin: 20px;
+    flex-grow: 1;
+    position: relative;
+    background-position: center;
+    background-size: cover;
 }
-.product_img img{
+#gt3{
+    background-image: url(img/Interieur-Porsche-GT3.jpg);
+}
+#ferrari{
+    background-image: url(img/Ferrari-328gts.jpg);
+}
+#carrera{
+    background-image: url(img/Porsche-carrera.jpg)
+}
+#chevrolet{
+    background-image: url(img/Porsche-GT4.jpg);
+}
+#mercedes{
+    background-image: url(img/Mercedes-G63.jpg);
+}
+.product_img:hover{
+    flex-grow: 5;
+}
+.product_img img{   
     height: 100%;
 }
 .content-image{
@@ -146,10 +168,9 @@ h1{
 }
 .Services{
     height: 100vh;
-    padding: 80px 20%;
+    padding: 80px 10%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
 }
 #presentation{
@@ -163,6 +184,7 @@ h1{
 }
 .section{
     margin: 20px;
+    flex: 1 1 0px;
 }
 .section img{
     width: 100%;
@@ -250,7 +272,7 @@ h1{
         flex-direction: column !important;
     }
     .product_img{
-        flex: 1 1 150px;
+        flex: 1 1 300px;
     }
     .visualisateur_produit{
         flex-direction: row;
