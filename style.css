@@ -100,7 +100,7 @@ ul{
     background: linear-gradient(
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)
-      ),url(img/Lancia-stratos.jpg);
+      ),url(img/Lancia-stratos.webp);
       background-position: center;
       background-size: cover;
       flex-direction: column;
@@ -132,19 +132,19 @@ h1{
     background-size: cover;
 }
 #gt3{
-    background-image: url(img/Interieur-Porsche-GT3.jpg);
+    background-image: url(img/Interieur-Porsche-GT3.webp);
 }
 #ferrari{
-    background-image: url(img/Ferrari-328gts.jpg);
+    background-image: url(img/Ferrari-328gts.webp);
 }
 #carrera{
-    background-image: url(img/Porsche-carrera.jpg)
+    background-image: url(img/Porsche-carrera.webp)
 }
 #chevrolet{
-    background-image: url(img/Interieur-Chevrolet-MonteCarlo.jpg);
+    background-image: url(img/Interieur-Chevrolet-MonteCarlo.webp);
 }
 #mercedes{
-    background-image: url(img/Mercedes-G63.jpg);
+    background-image: url(img/Mercedes-G63.webp);
 }
 .product_img:hover{
     flex-grow: 5;
