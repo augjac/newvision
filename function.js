@@ -11,6 +11,7 @@ function toggleMenu() {
       toggle.querySelector("a").innerHTML = "<img src='img/Close.svg' alt='Icone de menu'>";
     }
 }
+
 // Animation while scrolling
 list.classList.add("pop");
 toggle.addEventListener('click', toggleMenu, false);
