@@ -2,17 +2,17 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Red Hat Display', sans-serif;
     transition-duration: 1s;
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     margin: 0;
     color: #fff;
-    overflow-x: hidden;
 }
 main{
     margin-top: 80px;
@@ -20,7 +20,7 @@ main{
 p{
     text-align: justify;
 }
-.banner .message, .banner span{
+.message, .banner span{
     font-size: 120px;
     font-weight: 900;
 }
@@ -141,7 +141,7 @@ h1{
     background-image: url(img/Porsche-carrera.jpg)
 }
 #chevrolet{
-    background-image: url(img/Porsche-GT4.jpg);
+    background-image: url(img/Interieur-Chevrolet-MonteCarlo.jpg);
 }
 #mercedes{
     background-image: url(img/Mercedes-G63.jpg);
@@ -149,7 +149,7 @@ h1{
 .product_img:hover{
     flex-grow: 5;
 }
-.product_img img{   
+.product_img img{  
     height: 100%;
 }
 .content-image{
@@ -192,7 +192,10 @@ h1{
 .content{
     height: fit-content;
     background-color: #1e1e1e;
-    padding: 70px 0;    
+    padding: 70px 10%;  
+}
+.content:last-of-type{
+    text-align: center;
 }
 .content h2{
     width: 100vw;
@@ -202,11 +205,89 @@ h1{
     animation-delay: calc(var(--scroll) * -0.5s);
     animation-iteration-count: 1;
     animation-fill-mode: both;
+    white-space: break-spaces;
 }
 .content h2:last-child{
     animation-direction: reverse;
     animation-duration: 0.7s;
 }
+.content .message{
+    text-align: center;
+    padding: 20px;
+}
+.content a{
+    text-decoration: none;
+    background-color: #fff;
+    color: #1e1e1e;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 900;
+    border: 1px solid #fff;
+    justify-content: center;
+}
+.content a:hover{
+    background-color: #1B4332;
+    color: #fff;
+}
+.Tabs-services{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Tabs-services button{
+    height: 33.33%;
+}
+.Tabs-services div{
+    flex: 1 1 0px;
+}
+.tablinks, h3{
+    width: 100%;
+    border: none;
+    padding: 30px 20px;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+.tabcontent{
+    display: none;
+    margin: 70px 10% 70px 50px;
+    flex-basis: 60%;
+}
+.tabcontent h3, .tabcontent p{
+    color: #1e1e1e;
+}
+.active, .tablinks:hover{
+    background-color: #1B4332;
+    color: #fff;
+}
+/* Partie Footer */
+footer{
+    display: flex;
+    align-items: center;
+    padding: 30px 10%;
+    width: 100%;
+    background-color: #1B4332;
+    flex-wrap: wrap;
+}
+footer div img{
+    width: 60%;
+    padding: 50px 20px;
+}
+footer div{
+    flex: 1 1 0px;
+    margin: 30px;
+}
+footer li{
+    list-style: none;
+    text-align: left;
+}
+footer a{
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 500;
+    color : #fff;
+}
+
 /* Partie responsive version Desktop supérieur à 900px */
 @media (min-width: 900px) {
     .toggle{
@@ -271,7 +352,7 @@ h1{
     .Services{
         flex-direction: column !important;
     }
-    .product_img{
+    .product_img, footer div, .Tabs-services div{
         flex: 1 1 300px;
     }
     .visualisateur_produit{
@@ -280,7 +361,7 @@ h1{
         animation: none;
     }
     .content h2{
-        font-size: 30px;
+        font-size: 28px;
         animation: none;
     }
     .content, .Services, .banner{

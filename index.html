@@ -9,18 +9,18 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="img/Favicon New Vision.svg" type="image/x-icon">  
   </head>
   <body>
     <header>
       <nav class="menu">
         <ul>
-          <li class="logo"><a href="#"><img src="img/Logo NewVision.svg" alt="Logo BMW"></a></li>
-          <li class="item"><a href="#1">Photos</a></li>
+          <li class="logo"><a href="#"><img src="img/Logo NewVision.svg" alt="Logo New Vision"></a></li>
+          <li class="item"><a href="#presentation">Photos</a></li>
           <li class="item"><a href="#2">Vidéos</a></li>
-          <li class="item"><a href="#3">Site internet</a></li>
-          <li id="contact"><a href="">Contact</a></li>
+          <li class="item"><a href="#2">Site internet</a></li>
+          <li id="contact"><a href="mailto:new.vision@gmx.com">Contact</a></li>
           <li class="toggle"><a href="#"><img src="img/Menu.svg" alt="Icone de menu"></a></li>
         </ul>
       </nav>
@@ -59,14 +59,68 @@
       </div>
       <div class="Services" id="incitation">
         <div class="section">
+          <img class="content-image" src="img/Nancybynight.jpg" alt="Batiment à Nancy">
+        </div>
+        <div class="section">
           <h2>Création visuelle sur mesure à Nancy</h2>
           <div class="centered"><span>Notre but, vous démarquez de la concurrence !</span></div>
-          <p>New vision est spécialisée dans la réalisation de photographie à Nancy. 
+          <p>New Vision est spécialisée dans la réalisation de photographie à Nancy. 
           Nous nous focalisons sur le visuel, car une image qui donne envie et une image qui fait vendre.
-          Mettre en valeur vos produits est notre objectif. New Vision est une agence travaillant avec des secteurs comme l'automobile, 
-          l'immobilier la restauration ou encore la mode.</p>
+          Mettre en valeur vos produits est notre objectif. Avec l'évolution grandissante du digital et notamment des réseaux sociaux 
+          l'importance de captiver l'attention de vos futurs clients au premier regard sont devenu primordiaux. 
+          Cela vous permettra de les inciter à aller plus loin et à faire appel à vos services ou produits. 
+          New Vision est une agence travaillant avec des secteurs comme l'automobile, l'immobilier la restauration ou encore la mode. 
+          Améliorer l'expérience de vos clients que ce soit sur votre site internet ou sur les réseaux sociaux avec des visuels impactant.
+            </p>
         </div>
       </div>
+      <div class="Tabs-services" id="2">
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos</button>
+          <button class="tablinks" onclick="openCity(event, 'Videos')">Vidéo</button>
+          <button class="tablinks" onclick="openCity(event, 'Sites')">Site internet</button>
+        </div>
+        
+        <div id="Photos" class="tabcontent">
+          <h3>Photographie</h3>
+          <p>New Vision est une entreprise de services photographique basée à Nancy, en Meurthe et Moselle. Spécialisée dans la photographie et la vidéo pour les professionnels, New Vision vous accompagne dans la mise en valeur de votre image, de votre activité et de vos produits. Que vous soyez un artisan, un commerçant, un restaurateur ou un industriel, New Vision vous propose des prestations sur mesure adaptées à vos besoins et à votre budget. Démarquez-vous de vos concurrents avec des visuels impactant à destination des réseaux sociaux, de votre site web ou encore de support de communication. Contactez dès maintenant New Vision pour obtenir un devis gratuit et personnalisé. Avec New Vision, donnez une nouvelle dimension à votre communication visuelle !
+          </p>
+        </div>
+        
+        <div id="Videos" class="tabcontent">
+          <h3>Réalisation vidéo</h3>
+          <p>New Vision est une entreprise spécialisée dans la création de vidéos pour les professionnels. Que vous soyez une PME, une grande entreprise ou une association, New Vision vous accompagne dans la réalisation de vos projets audiovisuels. Que ce soit pour promouvoir votre activité, former vos collaborateurs ou témoigner de votre impact, New Vision vous propose des solutions sur mesure qui s'adapte à vos besoins et contraintes. Avec plusieurs années d'expérience dans le secteur, New Vision est en mesure de filmer dans tous les types de situations et de lieux. New Vision vous offre une solution clé en main comprenant le tournage le montage ainsi que la post-production, pour donner à vos vidéos un rendu professionnel et attractif.</p>
+        </div>
+        
+        <div id="Sites" class="tabcontent">
+          <h3>Création de site internet</h3>
+          <p>New Vision est une entreprise spécialisée dans la création de site web à Nancy pour les professionnelles. Que vous soyez une PME, une association ou un indépendant, New Vision vous accompagne dans la conception et la réalisation de votre site web sur mesure. Grâce à notre expertise en référencement web SEO, nous vous aidons à optimiser votre visibilité sur les moteurs de recherche et à attirer plus de clients potentiels. Contactez-nous afin de discuter de votre projet et obtenir un devis personnalisé en fonction de vos besoins.
+          </p>
+        </div>
+      </div> 
+      <div class="content">
+        <div class="message">Commençons à travailler ensemble !</div>
+        <a href="mailto:new.vision@gmx.com">Prendre rendez-vous</a>
+      </div>
     </main>
+    <footer>
+      <div><img src="img/Logo NewVision.svg" alt="Logo New Vision"></div>
+      <div>
+          <li><a href="">Photos</a></li>
+          <li><a href="">Vidéos</a></li>
+          <li><a href="">Site internet</a></li>
+          <li><a href="">Contact</a></li>
+      </div>
+      <div>
+          <li><a href="mailto:new.vision@gmx.com">new.vision@gmx.com</a></li>
+          <li><a href="tel:0750932475">07 50 93 24 75</a></li>
+          <li><a href="https://www.linkedin.com/in/augustin-jacquel/">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/augjac/">Instagram</a></li>
+      </div>
+    </footer>
   </body>
+  <script>
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
 </html>
