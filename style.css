@@ -17,9 +17,6 @@ body{
 main{
     margin-top: 80px;
 }
-p{
-    text-align: justify;
-}
 .message, .banner span{
     font-size: 120px;
     font-weight: 900;
