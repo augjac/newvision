@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
     transition-duration: 1s;
 }
@@ -38,21 +38,16 @@ main{
     margin-top: 80px;
 }
 .message, .banner span{
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 900;
+}
+span{
+    font-size: 48px;
 }
 .banner span{
     color: #D48A35;
-    padding: 20px;
-}
-.banner span:hover{
-    font-size: 90px;
-    background-color: #D48A35;
-    color: #fff;
-    border-radius: 50px;
 }
 span{
-    font-size: 60px;
     font-weight: 700;
 }
 header{

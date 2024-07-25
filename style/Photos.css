@@ -43,13 +43,6 @@ main{
 }
 .banner span{
     color: #D48A35;
-    padding: 20px;
-}
-.banner span:hover{
-    font-size: 90px;
-    background-color: #D48A35;
-    color: #fff;
-    border-radius: 50px;
 }
 span{
     font-size: 60px;
