@@ -113,14 +113,14 @@ footer ul{
     width: 50px;
 }
 .banner{
-    height: 100vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     padding: 50px 30% 50px 10%;
     background: linear-gradient(
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)
-      ),url(img/Lancia-stratos.webp);
+      ),url(../img/Loveroom.webp);
       background-position: center;
       background-size: cover;
       flex-direction: column;
