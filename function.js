@@ -32,4 +32,21 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+const cursorElements = document.querySelectorAll('.cursor');
 
+document.body.addEventListener('mousemove', event => {
+    const { clientX, clientY } = event;
+
+    cursorElements.forEach(element => {
+        // Adjust the z-index if needed
+        element.style.zIndex = '100'; // Example value
+
+        // Update the position with damping effect (adjust the divisor as desired)
+        const dampingFactor = 1;
+        const newX = clientX / dampingFactor;
+        const newY = clientY / dampingFactor;
+
+        element.style.left = `${newX}px`;
+        element.style.top = `${newY}px`;
+    });
+}); 
